@@ -1,0 +1,100 @@
+body {
+    background: #f7f3ee;
+}
+
+h1,
+h2,
+h5 {
+    color: #2c2c2c;
+}
+
+/* Card hover premium effect */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Button smooth */
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    color: #333 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.offcanvas {
+    border-left: none;
+}
+
+.offcanvas-body {
+    background: #fff;
+}
+
+.btn-danger {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.form-control,
+select {
+    padding: 10px;
+    border-radius: 10px !important;
+    border: 1px solid #e5e5e5;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #000;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.offcanvas.show {
+    transition: all 0.3s ease;
+}
