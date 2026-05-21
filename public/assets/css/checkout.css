@@ -1,0 +1,34 @@
+/* ==========================================================================
+   CHECKOUT PAGE STYLES (checkout.css)
+   ========================================================================== */
+
+.checkout-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.checkout-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f8f9fa;
+    padding-bottom: 0.85rem;
+    margin-bottom: 0.85rem;
+}
+
+.order-item:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}

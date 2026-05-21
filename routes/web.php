@@ -10,6 +10,10 @@ Route::get('/menu', function () {
     return view('pages.menu');
 });
 
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
 use App\Http\Controllers\CartController;
 
 Route::get('/cart', [CartController::class, 'index']);
@@ -19,3 +23,9 @@ Route::get('/cart/remove/{id}', [CartController::class, 'remove']);
 use App\Http\Controllers\CheckoutController;
 
 Route::get('/checkout', [CheckoutController::class, 'index']);
+
+Route::get('/clear-cart', function () {
+    session()->forget('cart');
+
+    return redirect('/');
+});

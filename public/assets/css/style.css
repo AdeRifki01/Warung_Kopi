@@ -1,39 +1,67 @@
+/* ==========================================================================
+   1. VARIABLES & DESIGN TOKENS (GLOBAL)
+   ========================================================================== */
+:root {
+    /* Colors */
+    --primary-color: #d8a676;
+    --primary-hover: #e8b98d;
+    --bg-body: #f5f1eb;
+    --text-dark: #2c2c2c;
+    --text-muted: #6c757d;
+    --border-color: #e5e5e5;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s ease;
+}
+
+/* ==========================================================================
+   2. BASE & GENERAL STYLES
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: #f7f3ee;
+    font-family: "Inter", sans-serif;
+    background: var(--bg-body);
+    overflow-x: hidden;
+    color: var(--text-dark);
 }
 
 h1,
 h2,
-h5 {
-    color: #2c2c2c;
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-dark);
 }
 
-/* Card hover premium effect */
+.text-coffee {
+    color: var(--primary-color) !important;
+}
+
+.page-container {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+/* ==========================================================================
+   3. COMMON CARD COMPONENTS
+   ========================================================================== */
 .card {
-    transition: all 0.3s ease;
+    border-radius: 16px;
+    transition: var(--transition-smooth);
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Button smooth */
-.btn {
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
-.nav-link {
-    color: #333 !important;
-    font-weight: 500;
-}
-
-.nav-link:hover {
-    color: #000 !important;
+.card img {
+    height: 200px;
+    object-fit: cover;
 }
 
 .badge {
@@ -42,59 +70,48 @@ h5 {
     border-radius: 20px;
 }
 
-.card img {
-    height: 200px;
-    object-fit: cover;
-}
-
-.offcanvas {
-    border-left: none;
-}
-
-.offcanvas-body {
-    background: #fff;
-}
-
-.btn-danger {
-    border-radius: 50%;
-    width: 28px;
-    height: 28px;
-    padding: 0;
-}
-
-.card {
-    border-radius: 16px;
-}
-
-.form-control,
-select {
-    padding: 10px;
-    border-radius: 10px !important;
-    border: 1px solid #e5e5e5;
-}
-
-.form-control:focus {
-    box-shadow: none;
-    border-color: #000;
-}
-
-.card {
-    transition: all 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
+/* ==========================================================================
+   4. COMMON BUTTONS
+   ========================================================================== */
+/* Base Button Transitions */
 .btn {
-    transition: all 0.2s ease;
+    transition: var(--transition-smooth);
+}
+
+.btn:hover {
+    transform: scale(1.05);
 }
 
 .btn:active {
     transform: scale(0.95);
 }
 
-.offcanvas.show {
-    transition: all 0.3s ease;
+/* Custom Coffee Button */
+.btn-coffee {
+    background: var(--primary-color);
+    color: #000;
+    font-weight: 600;
+    border: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-coffee:hover {
+    background: var(--primary-hover);
+    transform: translateY(-3px);
+    color: #000;
+}
+
+/* ==========================================================================
+   5. COMMON FORMS & INPUTS
+   ========================================================================== */
+.form-control,
+select {
+    padding: 10px;
+    border-radius: 10px !important;
+    border: 1px solid var(--border-color);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #000;
 }

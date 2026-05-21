@@ -1,0 +1,53 @@
+/* ==========================================================================
+   NAVBAR STYLES (navbar.css)
+   ========================================================================== */
+
+.navbar {
+    backdrop-filter: blur(15px);
+    background: rgb(52, 37, 25, 0.75) !important;
+    border-bottom: 1px solid #342519;
+    transition: var(--transition-smooth);
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: #ffffff85 !important;
+}
+
+.navbar-spacer {
+    height: 70px;
+}
+
+.bi {
+    vertical-align: middle;
+}
+
+/* Offcanvas Sidebar Cart in Navbar */
+.offcanvas {
+    border-left: none;
+    transition: var(--transition-smooth);
+}
+
+.offcanvas-body {
+    background: #ede6d9;
+}
+
+/* Circular Danger Button inside offcanvas */
+.btn-danger-circle {
+    border-radius: 50% !important;
+    width: 28px !important;
+    height: 28px !important;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

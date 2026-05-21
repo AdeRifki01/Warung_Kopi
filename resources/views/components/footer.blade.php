@@ -1,3 +1,3 @@
-<footer class="bg-dark text-white text-center p-3 mt-5">
-    <p class="mb-0">© {{ date('Y') }} WarungKopi - All Rights Reserved</p>
+<footer class="main-footer">
+    <p>© {{ date('Y') }} WarungKopi - All Rights Reserved</p>
 </footer>
