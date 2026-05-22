@@ -18,11 +18,11 @@
                     under the best conditions.
                 </p>
                 <div class="mt-4 d-flex gap-3">
-                    <a href="/menu" class="btn btn-coffee px-4 py-2 rounded shadow-sm">
-                        Buy Coffee
-                    </a>
                     <a href="/about" class="btn btn-outline-light px-4 py-2 rounded">
                         Our Cafe
+                    </a>
+                    <a href="/menu" class="btn btn-coffee px-4 py-2 rounded shadow-sm">
+                        Buy Coffee
                     </a>
                 </div>
             </div>
@@ -97,54 +97,51 @@
     </div>
 </section>
 
-<!-- PROMO / OPEN HOURS SECTION -->
-<section class="promo-section py-5">
+<!-- HAPPY HOURS SECTION -->
+<section class="happy-section py-5">
     <div class="container">
-        <div class="row g-0 overflow-hidden rounded-5 shadow-lg">
-            <!-- LEFT SIDE -->
-            <div class="col-lg-6">
-                <div class="promo-left">
-                    <div class="promo-content">
-                        <span class="promo-subtitle">
-                            PREMIUM COFFEE
-                        </span>
-                        <h2>
-                            Why Choose<br>
-                            Us?
-                        </h2>
-                        <p>
-                            Nikmati racikan kopi premium dengan
-                            biji pilihan terbaik dan suasana nyaman
-                            untuk menemani aktivitas harian Anda.
-                        </p>
-                        <a href="/menu" class="promo-btn-dark">
-                            Order Now
-                        </a>
-                    </div>
-                    <div class="promo-image">
-                        <img src="{{ asset('assets/img/products/coffee2.png') }}" alt="Coffee">
-                    </div>
+        <div class="happy-wrapper">
+
+            <!-- LEFT -->
+            <div class="happy-left">
+                <span class="happy-subtitle">
+                    SPECIAL OFFER
+                </span>
+                <h2>
+                    Morning Happy Hours
+                </h2>
+                <p>
+                    Nikmati kopi premium terbaik dengan promo spesial
+                    setiap pagi untuk menemani aktivitas harian Anda.
+                </p>
+                <div class="happy-buttons">
+                    <a href="/menu" class="btn-happy-primary">
+                        Order Coffee
+                    </a>
+                    <a href="/about" class="btn-happy-secondary">
+                        Learn More
+                    </a>
                 </div>
             </div>
-            <!-- RIGHT SIDE -->
-            <div class="col-lg-6">
-                <div class="promo-right">
-                    <span class="promo-subtitle-dark">
-                        Open Daily • Every Hours
-                    </span>
-                    <h2>
-                        200 of from<br>
-                        10 am
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit sed do eiusmod tempor.
-                    </p>
-                    <a href="/about" class="promo-btn-light">
-                        Our Cafe & Booking
-                    </a>
-                    <div class="promo-line"></div>
-                </div>
+
+            <!-- CENTER IMAGE -->
+            <div class="happy-center">
+                <img src="{{ asset('assets/img/products/coffee2.png') }}" alt="Coffee Cup">
+            </div>
+
+            <!-- RIGHT -->
+            <div class="happy-right">
+                <span class="happy-mini-text">
+                    Visit us today
+                </span>
+                <h2>$200</h2>
+                <p>
+                    Special discount for
+                    premium coffee package.
+                </p>
+                <a href="/booking" class="btn-happy-primary">
+                    Booking
+                </a>
             </div>
         </div>
     </div>
