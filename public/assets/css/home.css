@@ -1,9 +1,9 @@
 /* ==================================================
-   HOME PAGE STYLES
+    HOME PAGE STYLES
 ================================================== */
 
 /* =========================
-   GLOBAL SECTION
+    GLOBAL SECTION
 ========================= */
 
 .section-title {
@@ -22,7 +22,7 @@
 }
 
 /* =========================
-   HERO SECTION
+    HERO SECTION
 ========================= */
 
 .hero-section {
@@ -80,9 +80,97 @@
     color: #fff;
     transform: translateY(-2px);
 }
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+    .hero-heading {
+        text-align: center;
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* HERO */
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: 46px;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        margin: auto;
+    }
+
+    /* GLOBAL */
+
+    .section-title,
+    .coffee-section-title {
+        font-size: 34px;
+    }
+
+    .section-text,
+    .coffee-section-text {
+        font-size: 14px;
+    }
+
+    /* FEATURE */
+
+    .feature-card {
+        height: 320px;
+    }
+
+    .feature-content {
+        padding: 22px;
+    }
+
+    .feature-content h5 {
+        font-size: 22px;
+    }
+
+    /* MENU */
+
+    .coffee-menu-image img {
+        height: 150px;
+    }
+
+    .coffee-menu-content {
+        padding: 14px;
+    }
+
+    .coffee-menu-content h5 {
+        font-size: 15px;
+    }
+
+    .coffee-menu-content p {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .coffee-order-btn {
+        padding: 8px 14px;
+        font-size: 11px;
+    }
+
+    /* CTA */
+
+    .cta-box {
+        padding: 60px 24px;
+    }
+
+    .cta-box h3 {
+        font-size: 30px;
+    }
+}
 
 /* =========================
-   FEATURE SECTION
+    FEATURE SECTION
 ========================= */
 
 .feature-card {
@@ -165,7 +253,7 @@
 }
 
 /* =========================
-   HAPPY HOURS SECTION
+    HAPPY HOURS SECTION
 ========================= */
 
 .happy-section {
@@ -296,7 +384,7 @@
 }
 
 /* =========================
-   RESPONSIVE
+    RESPONSIVE
 ========================= */
 
 @media (max-width: 992px) {
@@ -469,91 +557,4 @@
 
 .max-width-500 {
     max-width: 500px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 992px) {
-    .hero-heading {
-        font-size: 58px;
-    }
-}
-
-@media (max-width: 768px) {
-    /* HERO */
-
-    .hero-section {
-        text-align: center;
-    }
-
-    .hero-heading {
-        font-size: 46px;
-    }
-
-    .hero-text {
-        font-size: 15px;
-        margin: auto;
-    }
-
-    /* GLOBAL */
-
-    .section-title,
-    .coffee-section-title {
-        font-size: 34px;
-    }
-
-    .section-text,
-    .coffee-section-text {
-        font-size: 14px;
-    }
-
-    /* FEATURE */
-
-    .feature-card {
-        height: 320px;
-    }
-
-    .feature-content {
-        padding: 22px;
-    }
-
-    .feature-content h5 {
-        font-size: 22px;
-    }
-
-    /* MENU */
-
-    .coffee-menu-image img {
-        height: 150px;
-    }
-
-    .coffee-menu-content {
-        padding: 14px;
-    }
-
-    .coffee-menu-content h5 {
-        font-size: 15px;
-    }
-
-    .coffee-menu-content p {
-        font-size: 12px;
-        margin-bottom: 14px;
-    }
-
-    .coffee-order-btn {
-        padding: 8px 14px;
-        font-size: 11px;
-    }
-
-    /* CTA */
-
-    .cta-box {
-        padding: 60px 24px;
-    }
-
-    .cta-box h3 {
-        font-size: 30px;
-    }
 }

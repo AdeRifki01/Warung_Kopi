@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warung Kopi</title>
+    <title>CoffeeShop</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/menu.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/cart.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/checkout.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/gallery.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animation.css') }}">
 
 	<!-- Animasi AOS -->
@@ -78,5 +80,6 @@ function showToast() {
     toast.show();
 }
 </script>
+@stack('scripts')
 </body>
 </html>

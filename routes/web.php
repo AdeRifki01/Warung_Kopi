@@ -14,6 +14,14 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/gallery', function () {
+    return view('pages.gallery');
+});
+
 use App\Http\Controllers\CartController;
 
 Route::get('/cart', [CartController::class, 'index']);
