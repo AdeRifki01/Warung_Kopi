@@ -1,0 +1,84 @@
+/* =========================
+    HERO SECTION
+========================= */
+
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.45)),
+        url("../../img/bgCoffe1.jpg"); /* Adjusted URL path */
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-heading {
+    padding-top: 50px;
+    font-size: 76px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 540px;
+}
+
+/* BUTTON */
+
+.btn-coffee {
+    background: #b67c52;
+    color: #fff;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-coffee:hover {
+    background: #8d5f3d;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+    .hero-heading {
+        text-align: center;
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: 46px;
+        text-align: center;
+    }
+
+    .hero-text {
+        font-size: 15px;
+        margin: auto;
+    }
+}

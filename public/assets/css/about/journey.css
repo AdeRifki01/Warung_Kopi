@@ -1,0 +1,141 @@
+/* ==========================================================================
+   5. ABOUT JOURNEY / TIMELINE SECTION
+   ========================================================================== */
+.about-journey-section {
+    background: #1a0e07;
+}
+
+.about-journey-section .about-section-eyebrow {
+    color: var(--primary-color);
+}
+.about-journey-section .about-section-title {
+    color: #fff;
+}
+
+.about-timeline {
+    position: relative;
+    padding: 1rem 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Vertical line */
+.about-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        var(--primary-color) 15%,
+        var(--primary-color) 85%,
+        transparent
+    );
+}
+
+.about-timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Left-side items */
+.about-timeline-item .about-timeline-year {
+    flex: 1;
+    text-align: right;
+    padding-right: 2rem;
+}
+.about-timeline-item .about-timeline-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+/* Right-side items */
+.about-timeline-item--right .about-timeline-year {
+    order: 3;
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 0;
+}
+.about-timeline-item--right .about-timeline-dot {
+    order: 2;
+}
+.about-timeline-item--right .about-timeline-content {
+    order: 1;
+    text-align: right;
+    padding-right: 2rem;
+    padding-left: 0;
+}
+
+.about-timeline-year {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.about-timeline-dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    border: 3px solid #1a0e07;
+    box-shadow: 0 0 0 3px var(--primary-color);
+    flex-shrink: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.about-timeline-item:hover .about-timeline-dot {
+    transform: scale(1.3);
+    box-shadow: 0 0 0 6px rgba(216, 166, 118, 0.2);
+}
+
+.about-timeline-content h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.4rem;
+}
+.about-timeline-content p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    /* Timeline mobile */
+    .about-timeline::before {
+        left: 16px;
+    }
+    .about-timeline-item,
+    .about-timeline-item--right {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 48px;
+    }
+    .about-timeline-item .about-timeline-year,
+    .about-timeline-item--right .about-timeline-year {
+        order: 1;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 0.3rem;
+    }
+    .about-timeline-dot {
+        position: absolute;
+        left: 7px;
+        top: 4px;
+    }
+    .about-timeline-item .about-timeline-content,
+    .about-timeline-item--right .about-timeline-content {
+        order: 2;
+        padding: 0;
+        text-align: left;
+    }
+}

@@ -1,0 +1,162 @@
+/* ==================================================
+   MODERN CTA SECTION
+================================================== */
+
+.cta-section {
+    padding: 50px 0;
+}
+
+/* BOX */
+
+.cta-modern-box {
+    position: relative;
+    background: linear-gradient(135deg, #1b120d, #2b1b13, #3a2417);
+    border-radius: 36px;
+    overflow: hidden;
+    padding: 40px 10px;
+    text-align: center;
+    isolation: isolate;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+/* GLOW EFFECT */
+
+.cta-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.18;
+    z-index: -1;
+}
+
+.cta-glow-1 {
+    background: #d6a77a;
+    top: -120px;
+    left: -80px;
+}
+
+.cta-glow-2 {
+    background: #8d5f3d;
+    bottom: -120px;
+    right: -80px;
+}
+
+/* CONTENT */
+
+.cta-content {
+    max-width: 760px;
+    margin: auto;
+}
+
+/* SUBTITLE */
+
+.cta-subtitle {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px 20px;
+    border-radius: 999px;
+    color: #d7a675;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 28px;
+}
+
+/* TITLE */
+
+.cta-content h2 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+/* TEXT */
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 620px;
+    margin: auto;
+}
+
+/* BUTTONS */
+
+.cta-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* PRIMARY BTN */
+
+.cta-btn-primary {
+    background: #d6a77a;
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.cta-btn-primary:hover {
+    background: #bc8d61;
+    transform: translateY(-4px);
+    color: #fff;
+}
+
+/* SECONDARY BTN */
+
+.cta-btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.cta-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-4px);
+    color: #fff;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 70px 0;
+    }
+
+    .cta-modern-box {
+        padding: 70px 24px;
+        border-radius: 28px;
+    }
+
+    .cta-content h2 {
+        font-size: 36px;
+    }
+
+    .cta-content p {
+        font-size: 15px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-btn-primary,
+    .cta-btn-secondary {
+        width: 100%;
+    }
+}

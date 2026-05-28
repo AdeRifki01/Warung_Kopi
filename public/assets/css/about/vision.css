@@ -1,0 +1,88 @@
+/* ==========================================================================
+   6. ABOUT VISION SECTION
+   ========================================================================== */
+.about-vision-section {
+    background: #faf7f2;
+}
+
+.about-vision-image-wrapper {
+    position: relative;
+}
+.about-vision-image-wrapper img {
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease;
+}
+.about-vision-image-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.about-vision-tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1a0e07;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.about-vision-tag i {
+    color: var(--primary-color);
+}
+
+/* Mission List */
+.about-mission-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 1.5rem;
+}
+.about-mission-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #f0e8df;
+    transition: all 0.3s ease;
+}
+.about-mission-item:hover {
+    border-color: rgba(216, 166, 118, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transform: translateX(4px);
+}
+.about-mission-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), #c4895a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+.about-mission-item div {
+    display: flex;
+    flex-direction: column;
+}
+.about-mission-item strong {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1a0e07;
+    margin-bottom: 2px;
+}
+.about-mission-item span {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}

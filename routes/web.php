@@ -22,6 +22,12 @@ Route::get('/gallery', function () {
     return view('pages.gallery');
 });
 
+Route::get('/booking', function () {
+    return view('pages.booking');
+});
+
+
+
 use App\Http\Controllers\CartController;
 
 Route::get('/cart', [CartController::class, 'index']);

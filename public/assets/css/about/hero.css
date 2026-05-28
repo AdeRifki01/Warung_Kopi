@@ -1,0 +1,179 @@
+/* ==========================================================================
+   1. ABOUT HERO SECTION
+   ========================================================================== */
+.about-hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: url("../../img/bgCoffe3.jpg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(20, 10, 5, 0.88) 0%,
+        rgba(80, 40, 10, 0.75) 50%,
+        rgba(20, 10, 5, 0.85) 100%
+    );
+    z-index: 1;
+}
+
+/* Floating particle orbs */
+.about-hero-particles {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.about-hero-particles span {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(216, 166, 118, 0.25),
+        transparent 70%
+    );
+    animation: aboutParticleFloat 8s ease-in-out infinite;
+}
+.about-hero-particles span:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    top: -10%;
+    left: -5%;
+    animation-delay: 0s;
+}
+.about-hero-particles span:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    right: 5%;
+    animation-delay: 2s;
+}
+.about-hero-particles span:nth-child(3) {
+    width: 150px;
+    height: 150px;
+    bottom: 10%;
+    left: 20%;
+    animation-delay: 4s;
+}
+.about-hero-particles span:nth-child(4) {
+    width: 250px;
+    height: 250px;
+    bottom: -5%;
+    right: 15%;
+    animation-delay: 1s;
+}
+.about-hero-particles span:nth-child(5) {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 45%;
+    animation-delay: 3s;
+}
+
+@keyframes aboutParticleFloat {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-30px) scale(1.1);
+        opacity: 1;
+    }
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.about-hero-eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    background: rgba(216, 166, 118, 0.15);
+    border: 1px solid rgba(216, 166, 118, 0.4);
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.about-hero-highlight {
+    background: linear-gradient(135deg, var(--primary-color), #f0c98a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-hero-desc {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.8;
+    max-width: 620px;
+    margin: 0 auto 2rem;
+}
+
+.about-hero-scroll-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.about-hero-scroll-indicator span {
+    display: block;
+    width: 28px;
+    height: 48px;
+    border: 2px solid rgba(216, 166, 118, 0.6);
+    border-radius: 20px;
+    position: relative;
+}
+.about-hero-scroll-indicator span::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 4px;
+    animation: aboutScrollBounce 1.5s ease-in-out infinite;
+}
+@keyframes aboutScrollBounce {
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-50%) translateY(12px);
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero-title {
+        font-size: 2.2rem;
+    }
+    .about-hero-desc {
+        font-size: 0.95rem;
+    }
+}

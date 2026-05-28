@@ -1,0 +1,35 @@
+/* =========================
+    GLOBAL SECTION
+========================= */
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 14px;
+}
+
+.section-text {
+    max-width: 650px;
+    margin: auto;
+    color: #777;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* HELPER */
+.max-width-500 {
+    max-width: 500px;
+}
+
+@media (max-width: 768px) {
+    .section-title,
+    .coffee-section-title {
+        font-size: 34px;
+    }
+
+    .section-text,
+    .coffee-section-text {
+        font-size: 14px;
+    }
+}

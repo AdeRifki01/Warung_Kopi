@@ -1,0 +1,66 @@
+/* ==========================================================================
+   5. MAP SECTION
+   ========================================================================== */
+.contact-map-section {
+    position: relative;
+    background: #faf7f2;
+    padding-bottom: 3rem;
+}
+
+.map-wrapper {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 0 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.map-overlay-card {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 1px solid rgba(216, 166, 118, 0.3);
+    max-width: 320px;
+}
+
+.map-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--primary-color), #c4895a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.map-overlay-card h5 {
+    margin: 0 0 4px;
+    font-weight: 800;
+    color: #1a0e07;
+    font-size: 1.1rem;
+}
+
+.map-overlay-card p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .map-wrapper {
+        margin: 0 1rem;
+        border-radius: 16px;
+    }
+}

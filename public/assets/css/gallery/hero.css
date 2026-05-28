@@ -1,0 +1,74 @@
+/* ==========================================================================
+   1. GALLERY HERO SECTION
+   ========================================================================== */
+.gallery-hero-section {
+    position: relative;
+    min-height: 40vh;
+    background: url("../../img/bgCoffe3.jpg") center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(20, 10, 5, 0.9) 0%,
+        rgba(70, 35, 15, 0.8) 50%,
+        rgba(20, 10, 5, 0.95) 100%
+    );
+    z-index: 1;
+}
+
+.gallery-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 110px;
+    padding-bottom: 3rem;
+}
+
+.gallery-hero-eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    background: rgba(216, 166, 118, 0.12);
+    border: 1px solid rgba(216, 166, 118, 0.35);
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.gallery-hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 0.75rem;
+}
+
+.gallery-hero-highlight {
+    background: linear-gradient(135deg, var(--primary-color), #f0c98a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gallery-hero-desc {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .gallery-hero-title {
+        font-size: 2.2rem;
+    }
+}

@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/checkout.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/gallery.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/booking.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/animation.css') }}">
 
 	<!-- Animasi AOS -->
